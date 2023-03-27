@@ -1,0 +1,63 @@
+.messanger{
+    display: flex;
+    height: 100vh;
+    gap: 30px;
+
+    .chatmenu{
+        flex: 3.5;
+        input{
+            width: 90%;
+            padding: 10px;
+            border: none;
+            border-bottom: 1px solid gray;
+        }
+    }
+    .chatbox{
+        flex: 5.5;
+        position: relative;
+
+        .top{
+            height: 100vh;
+            overflow: scroll;
+            
+        }
+
+        .bottom{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: absolute;
+            left: 0;
+            bottom: 10px;
+            width: 100%;
+            background-color: white;
+
+            textarea{
+                resize: none;
+                height: 50px;
+                width: 80%;
+                border: 1px solid grey;
+                padding: 8px;
+                border-radius: 4px;
+            }
+
+            button{
+
+                color: white;
+                background-color: teal;
+                padding: 8px 12px;
+                border: none;
+                font-size: 17px;
+                border-radius: 5px;
+
+            }
+        }
+    }
+    .chatonline{
+        flex: 3;
+    }
+
+    .chatwrapper{
+        padding: 10px;
+    }
+}
